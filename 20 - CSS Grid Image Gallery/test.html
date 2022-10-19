@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="item">
+        <img srcset="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+        <h1>text 2</h1>
+       
+    </div>
+
+    <div class="item">
+    <img src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="">
+    <h1>text</h1>
+</div>
+    
+</div>
+
+</body>
+
+<style>
+
+    h1,h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 300px;
+    }
+    .item {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1;
+    }
+
+    .item img {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+    }
+
+    .item h1 {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        justify-self: center;
+        align-self: center;
+    }
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+</style>
+</html>
